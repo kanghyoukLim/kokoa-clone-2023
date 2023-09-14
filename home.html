@@ -1,28 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023캡스톤1조</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>James Training</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        h1 {
+            color:yellowgreen;          
+               /* TIL 
+               styles.css와 style 중 어떤게 적용될까? 
+               결론은 위에서 부터 순차적으로 적용되므로, 순서상 아래쪽 코드가 보여짐 */
+        }
+        html {
+            background-color: olivedrab;
+        }
+        h1 {
+            font-size: 50px;
+            /* style을 각각 따로 쓸수도 있지만 함께 쓰는게 더 보기 좋다 */
+        }
+        h1 {
+            font-size: 35px;
+            color : black;
+        } 
+        body {
+            margin: 300px;   
+            /* margin은 박스 외곽 경계 */
+            background-color: thistle;
+        }
+        div {
+            display: inline;
+            /* 디스플레이 속성이 inline이면 높이와 너비를 갖을 수 없다. */
+            margin-left: 50px;
+            margin-right: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 150px;
+            width: 150px;
+            background-color: tomato;
+            font-size: 10;
+        }
+        span {
+            background-color: turquoise;
+            font-size: 20px;
+        }
+    </style>
+    <meta name="description" content="This is my world!">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-    <h1>참고자료.</h1>
-    
-    <h4>Html관련 태그를 검색할 때 'mdn'을 같이 검색할 것</h4>
-    <p><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">Html Docu mdn</a></p>
-    <form>
-        <input type="color"/>
-        <input required placeholder="Name" type="text"/>
-        <input placeholder="Last Name" type="text"/>
-        <input placeholder="User ID" type="text"/>
-        <input placeholder="Password" minlength="8" type="password"/>
-        <input type="submit" value="Creat Account"/>
-        <meta name="author" content="Chris Mills">
-<meta name="description" content="The MDN Learning Area aims to provide
-complete beginners to the Web with all they need to know to get
-started with developing web sites and applications.">
+    <div>동해물과 백두산이 마르고 닳도록 하느님이 보우하사</div>
+    <div></div>
+    <div></div>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <!-- box요소 옆에는 다른 요소가 올 수 없다. 박스는 block
+    span 이나 img 등은 옆에 다른 요소가 올 수 있다. 이런 요소는 inline = in the same line
+    블럭이 아닌 요소를 기억하는 것이 좋음. span, a, image 등 -->
 
-    </form>
+    <!-- 디스플레이 속성으로 span도 block으로 만들 수 있고, div도 inline으로 만들 수 있다. -->
+    <header>
+        <h1>The Jamse Times</h1>
+
+    </header>
+    <main>
+        <address>123 Road Altavista</address>
+
+
+    </main>
 </body>
-</html>
+</html> 
